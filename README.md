@@ -8,6 +8,9 @@ Cliente: Sérgio, empreendedor no setor de construção civil.
 
 Necessidade: Sérgio precisa melhorar o fluxo de informações em sua construtora, consolidando dados importantes que se perdem nas operações diárias do escritório.
 
+## Interface
+https://www.figma.com/design/OsLc7lW2xtcTjoZq7ULXSy/Teste-Sistema?node-id=0-1&t=I9lzLZYsfzSvDHOz-0
+
 ## Cenários Explorados para o MVP
   1. CRUD de Colaborador no RH:
 Criar, ler, atualizar e deletar informações de colaboradores.
