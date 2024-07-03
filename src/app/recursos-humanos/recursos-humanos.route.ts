@@ -5,3 +5,5 @@ export const RH_ROUTE: Route[] = [
   {path: 'recursos-humanos/cadastrar', component: FormBasicoComponent}
 
 ];
+
+//teste

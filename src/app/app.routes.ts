@@ -18,3 +18,5 @@ export const APP_ROUTES: Route[] = [
   {path: 'centro-custo', component:SidebarMenuCentroCustoComponent},
   {path: 'recursos-humanos/cadastrar', component:FormBasicoComponent}
 ];
+
+//teste
