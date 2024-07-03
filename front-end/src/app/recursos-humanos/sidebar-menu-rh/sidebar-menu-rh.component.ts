@@ -6,7 +6,7 @@ import { NavbarComponent } from "../../navbar/navbar.component";
     standalone: true,
     templateUrl: './sidebar-menu-rh.component.html',
     styleUrl: './sidebar-menu-rh.component.scss',
-    imports: [NavbarComponent]
+    imports: [NavbarComponent, RouterModule, CommonModule]
 })
 export class SidebarMenuRhComponent {
 
