@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Route } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarMenuRhComponent } from './recursos-humanos/sidebar-menu-rh/sidebar-menu-rh.component';
 import { SidebarMenuFinanceiroComponent } from './sidebar-menu-financeiro/sidebar-menu-financeiro.component';
@@ -8,10 +8,10 @@ import { SidebarMenuCentroCustoComponent } from './sidebar-menu-centro-custo/sid
 import { FormBasicoComponent } from './recursos-humanos/form-basico/form-basico.component';
 
 
-export const routes: Routes = [
+export const APP_ROUTES: Route[] = [
   {path: 'home', component:NavbarComponent},
   {path: '', redirectTo:'home', pathMatch:'full'},
-  {path: 'recursos-humanos', component:SidebarMenuRhComponent},
+  {path: 'recursos-humanos', component:SidebarMenuRhComponent, loadChildren: () => import('./recursos-humanos/recursos-humanos.route').then((m) => m.RH_ROUTE)},
   {path: 'financeiro', component:SidebarMenuFinanceiroComponent},
   {path: 'fornecedor', component:SidebarMenuFornecedorComponent},
   {path: 'clientes', component:SidebarMenuClienteComponent},
