@@ -1,15 +1,28 @@
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .container{
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Flex container */
+  //height: 100vh; /* Garante que ocupe a altura total da viewport */
+
+}
+
+.sidebar-menu {
+  width: 250px; /* Ajuste conforme necessário */
+  //background-color: #333; /* Cor de fundo */
+  padding: 0px;
+
 }
 /* informacoes-basicas.component.css */
 .informacoes-basicas {
+  flex: 1; /* Ocupa o espaço restante */
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
+  height: 454px;
+  width: 500px;
   border-radius: 8px;
+  margin-top: 120px;
+  margin-left: 5px; /* Espaçamento entre o menu e o formulário */
 }
 
 .informacoes-basicas h2 {

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from "../../navbar/navbar.component";
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-sidebar-menu-rh',
     standalone: true,
     templateUrl: './sidebar-menu-rh.component.html',
     styleUrl: './sidebar-menu-rh.component.scss',
-    imports: [NavbarComponent]
+    imports: [NavbarComponent, RouterModule, CommonModule]
 })
 export class SidebarMenuRhComponent {
 
